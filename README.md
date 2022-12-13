@@ -11,3 +11,9 @@ Technology to use:
 - Vite: https://vitejs.dev/
 - Storybook: https://storybook.js.org/
 - Meal API: https://www.themealdb.com/api.php
+
+# Steps for run the app
+```
+npm install
+npm run dev
+```
