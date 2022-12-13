@@ -10,6 +10,8 @@ Technology to use:
 - Mock Service Worker: https://mswjs.io/ 
 - Vite: https://vitejs.dev/
 - Storybook: https://storybook.js.org/
+- Eslint: https://eslint.org/
+- Prettier: https://prettier.io/
 - Meal API: https://www.themealdb.com/api.php
 
 # Steps for run the app
