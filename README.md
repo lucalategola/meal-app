@@ -10,3 +10,4 @@ Technology to use:
 - Mock Service Worker: https://mswjs.io/ 
 - Vite: https://vitejs.dev/
 - Storybook: https://storybook.js.org/
+- Meal API: https://www.themealdb.com/api.php
