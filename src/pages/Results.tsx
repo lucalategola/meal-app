@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { useFilterByCategoryQuery } from '../api/fetchFilterByCategory'
+import { useFilterByCategoryQuery } from '../api/meal/fetchFilterByCategory'
 
 const Detail = () => {
   const { category = '' } = useParams()
