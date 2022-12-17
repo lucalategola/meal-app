@@ -5,9 +5,7 @@ import { mealClient } from './mealClient'
 export const fetchFilterByCategory = async (
   category: string
 ): Promise<Meals> => {
-  const { data } = await mealClient.get(
-    `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
-  )
+  const { data } = await mealClient.get(`filter.php?c=${category}`)
   return data.meals
 }
 
