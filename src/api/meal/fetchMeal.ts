@@ -1,9 +1,9 @@
-import axios from 'axios'
 import { useQuery } from 'react-query'
-import { Meal } from '../types'
+import { Meal } from '../../types'
+import { mealClient } from './mealClient'
 
 export const fetchMealById = async (idMeal: string): Promise<Meal> => {
-  const { data } = await axios.get(
+  const { data } = await mealClient.get(
     `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`
   )
   return data.meals[0]

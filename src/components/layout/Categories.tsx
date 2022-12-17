@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useCategoriesQuery } from '../../api/fetchCategories'
+import { useCategoriesQuery } from '../../api/meal/fetchCategories'
 
 const Categories = (): JSX.Element => {
   const { isLoading, error, data } = useCategoriesQuery()
