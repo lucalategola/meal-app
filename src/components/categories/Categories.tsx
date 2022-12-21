@@ -10,21 +10,44 @@ const Categories = (): JSX.Element => {
 
   console.log(data)
   return (
-    <div className="categories">
-      {data?.map((category) => {
-        return (
-          <Link
-            key={category.idCategory}
-            to={`/results/${category.strCategory}`}
-          >
-            <div className="category">
-              <h3>{category.strCategory}</h3>
-              <p>{category.strCategoryDescription}</p>
-            </div>
-          </Link>
-        )
-      })}
-    </div>
+    <section className="categories">
+      <h2 className="section-title">categories</h2>
+      <div className="slider">
+        {data?.map((category) => {
+          return (
+            <article key={category.idCategory} className="category">
+              <h3 className="category-title">
+                <Link
+                  key={category.idCategory}
+                  to={`/results/${category.strCategory}`}
+                >
+                  {category.strCategory}
+                </Link>
+              </h3>
+              <div className="full-img">
+                <Link
+                  key={category.idCategory}
+                  to={`/results/${category.strCategory}`}
+                >
+                  <img
+                    src={category.strCategoryThumb}
+                    alt="{category.strCategory}"
+                  />
+                </Link>
+              </div>
+              <p className="category-text">{category.strCategoryDescription}</p>
+              <Link
+                key={category.idCategory}
+                to={`/results/${category.strCategory}`}
+                className="category-link"
+              >
+                Open
+              </Link>
+            </article>
+          )
+        })}
+      </div>
+    </section>
   )
 }
 
