@@ -24,6 +24,45 @@ const Layout = () => {
       <div className="wrapper">
         <main>
           <Outlet />
+          <section className="technologies">
+            <article className="technology">
+              <div className="full-img">
+                <a href="" title="Open React Site">
+                  <img src="/public/assets/react.svg" alt="react logo" />
+                </a>
+              </div>
+            </article>
+            <article className="technology">
+              <div className="full-img">
+                <a href="" title="Open Typescript Site">
+                  <img
+                    src="/public/assets/typescript.svg"
+                    alt="typescript logo"
+                  />
+                </a>
+              </div>
+            </article>
+            <article className="technology">
+              <div className="full-img">
+                <a href="" title="Open React Router Site">
+                  <img
+                    src="/public/assets/react-router.svg"
+                    alt="react router logo"
+                  />
+                </a>
+              </div>
+            </article>
+            <article className="technology">
+              <div className="full-img">
+                <a href="" title="Open React Query Site">
+                  <img
+                    src="/public/assets/react-query.svg"
+                    alt="react qquery logo"
+                  />
+                </a>
+              </div>
+            </article>
+          </section>
         </main>
       </div>
       <footer className="footer">
