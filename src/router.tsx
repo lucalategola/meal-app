@@ -3,23 +3,30 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Meal from './pages/Meal'
 import Results from './pages/Results'
+import Layout from './components/layout/Layout'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />,
-  },
-  {
-    path: 'about',
-    element: <About />,
-  },
-  {
-    path: 'meal/:mealId',
-    element: <Meal />,
-  },
-  {
-    path: 'results/:category',
-    element: <Results />,
+    element: <Layout />,
+    children: [
+      {
+        path: '/',
+        element: <Home />,
+      },
+      {
+        path: 'about',
+        element: <About />,
+      },
+      {
+        path: 'meal/:mealId',
+        element: <Meal />,
+      },
+      {
+        path: 'results/:category',
+        element: <Results />,
+      },
+    ],
   },
 ])
 
