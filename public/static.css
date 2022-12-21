@@ -132,6 +132,20 @@ a:hover.category-link {
   width: 100%;
 }
 
+.meal-title {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.meal-content {
+  display: flex;
+  gap: 2em;
+}
+
+.meal-image {
+  min-width: 300px;
+}
+
 .technologies {
   margin: 2em 0;
   display: grid;
