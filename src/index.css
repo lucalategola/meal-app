@@ -133,6 +133,20 @@ a:hover.category-link {
   width: 100%;
 }
 
+.meal-title {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.meal-image {
+  margin: 1em 0;
+}
+/* .meal-content {
+  display: flex;
+  gap: 2em;
+} */
+
+
 .technologies {
   margin: 2em 0;
   display: grid;
@@ -182,5 +196,14 @@ a:hover.category-link {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
     grid-gap: 1rem;
+  }
+
+  .meal-image {
+    min-width: 300px;
+  }
+
+  .meal-content {
+    display: flex;
+    gap: 2em;
   }
 }
