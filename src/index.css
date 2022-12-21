@@ -115,6 +115,7 @@ a.category-link {
   display: inline-block;
   border: 1px solid var(--primary);
   border-radius: 5px;
+  margin: 1em 0;
   padding: .5rem 1rem;
   transition: background-color 250ms linear;
 }
