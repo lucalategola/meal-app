@@ -1,0 +1,36 @@
+.meal-title {
+  margin: 1em 0;
+  text-transform: uppercase;
+}
+
+.meal-img {
+  width: 100%;
+  margin: 1em 0;
+}
+
+.meal-img img {
+  width: 100%;
+}
+
+/* .card-img {
+  width: 100%;
+} */
+
+
+.meal-content {
+  display: flex;
+  gap: 2em;
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .meal-img {
+    min-width: 300px;
+  }
+
+  .meal-content {
+    display: flex;
+    gap: 2em;
+  }
+}

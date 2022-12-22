@@ -1,8 +1,8 @@
 import { createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Meal from './pages/Meal'
-import Results from './pages/Results'
+import Meal from './pages/meal/Meal'
+import Meals from './pages/meals/Meals'
 import Layout from './components/layout/Layout'
 
 const router = createBrowserRouter([
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'results/:category',
-        element: <Results />,
+        element: <Meals />,
       },
     ],
   },

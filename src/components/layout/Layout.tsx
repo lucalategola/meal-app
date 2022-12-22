@@ -1,13 +1,24 @@
-import { Link, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import Footer from '../footer/Footer'
+import Nav from '../nav/Nav'
+import Technologies from '../technologies/Technologies'
 
 const Layout = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <Link to="/">Home</Link>
-      <Link to="/about">About Us</Link>
-      <Outlet />
-    </div>
+    <>
+      <header className="nav-header">
+        <div className="wrapper">
+          <Nav />
+        </div>
+      </header>
+      <div className="wrapper">
+        <main>
+          <Outlet />
+          <Technologies />
+        </main>
+      </div>
+      <Footer />
+    </>
   )
 }
 
