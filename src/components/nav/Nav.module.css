@@ -1,0 +1,43 @@
+
+h1 {
+  text-transform: uppercase;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.nav-header {
+  background-color: var(--light);
+  padding: 1em 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+ul.nav-items {
+  display: flex;
+  gap: 1.25em;
+}
+
+.nav-item a {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: border-color 250ms linear;
+}
+
+.nav-item a:hover {
+  border-color: var(--primary);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) {
+  nav.navigation {
+    gap: 2em;
+  }
+}

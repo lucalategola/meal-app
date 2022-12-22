@@ -1,0 +1,14 @@
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--light);
+  padding: .25em;
+  text-decoration: underline;
+}
