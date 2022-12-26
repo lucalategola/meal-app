@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import { useMealQuery } from '../../api/meal/fetchMeal'
+import { useMealQuery } from '../../hooks/meal/useMealQuery/useMealQuery'
 import styles from './Meal.module.css'
 
 const Meal = () => {

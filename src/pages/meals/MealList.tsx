@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom'
-import { useFilterByCategoryQuery } from '../../api/meal/fetchFilterByCategory'
+import { useMealsByCategoryQuery } from '../../hooks/meal/useMealsByCategoryQuery/useMealsByCategoryQuery'
 import MealCards from '../../components/cards/meal/MealCards'
-import styles from './Meals.module.css'
+import styles from './MealList.module.css'
 
 const Meals = () => {
   const { category = '' } = useParams()
-  const { isLoading, error, data } = useFilterByCategoryQuery(category)
+  const { isLoading, error, data } = useMealsByCategoryQuery(category)
 
   if (isLoading) return <p>Loading...</p>
 
