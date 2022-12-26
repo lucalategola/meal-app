@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query'
-import { Meal } from '../../types'
-import { mealClient } from './mealClient'
+import { Meal } from '../../../types'
+import { mealClient } from '../../../api/meal/mealClient'
 
 export const fetchMealById = async (idMeal: string): Promise<Meal> => {
   const { data } = await mealClient.get(`lookup.php?i=${idMeal}`)

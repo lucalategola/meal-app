@@ -15,14 +15,18 @@ const CategoryCards = ({ items }: Props): JSX.Element => {
     <div className={styles.cards}>
       {items.map((category) => {
         return (
-          <article key={category.idCategory} className={styles.card}>
+          <article
+            key={category.idCategory}
+            className={styles.card}
+            data-testid="category"
+          >
             <h3 className={styles['card-title']}>
-              <Link to={`/results/${category.strCategory}`}>
+              <Link to={`/meals/category/${category.strCategory}`}>
                 {category.strCategory}
               </Link>
             </h3>
             <div className={styles['card-img']}>
-              <Link to={`/results/${category.strCategory}`}>
+              <Link to={`/meals/category/${category.strCategory}`}>
                 <img
                   src={category.strCategoryThumb}
                   alt="{category.strCategory}"
@@ -33,7 +37,7 @@ const CategoryCards = ({ items }: Props): JSX.Element => {
               {category.strCategoryDescription}
             </p>
             <Link
-              to={`/results/${category.strCategory}`}
+              to={`/meals/category/${category.strCategory}`}
               className={styles['card-link']}
             >
               Open

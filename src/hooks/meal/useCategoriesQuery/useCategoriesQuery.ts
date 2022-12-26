@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query'
-import { Categories } from '../../types'
-import { mealClient } from './mealClient'
+import { Categories } from '../../../types'
+import { mealClient } from '../../../api/meal/mealClient'
 
 export const fetchCategories = async (): Promise<Categories> => {
   const { data } = await mealClient.get('categories.php')
