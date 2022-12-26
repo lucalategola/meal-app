@@ -1,4 +1,4 @@
-import { useCategoriesQuery } from '../../api/meal/fetchCategories'
+import { useCategoriesQuery } from '../../hooks/meal/useCategoriesQuery/useCategoriesQuery'
 import CategoryCards from '../cards/categories/CategoryCards'
 import styles from './Categories.module.css'
 
