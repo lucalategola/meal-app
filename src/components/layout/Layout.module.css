@@ -1,0 +1,7 @@
+.full-page {
+  height: 83vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
