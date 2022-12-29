@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { MemoryRouter, BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import Meals from './MealList'
 
-describe('Meals component', () => {
+describe('MealList page', () => {
   const createTestQueryClient = () =>
     new QueryClient({
       defaultOptions: {
